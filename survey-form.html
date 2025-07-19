@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Your Ideal Trip to Reunion Island</h1>
+      <p id="description">Help us design the perfect getaway to Reunion Island! Whether you're into relaxation, Creole cuisine, or fiery volcano hikes, tell us what would make your heart sing.</p>
+    </header>
+
+    <main>
+    <form id="survey-form">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label id="name-label" for="name">Name (required)</label>
+      <input required type="text" id="name" name="name" placeholder="e.g., John Doe">
+      <label id="email-label" for="email">Email (required)</label>
+      <input required type="email" id="email" name="email" placeholder="e.g., example@email.com">
+      <label id="number-label" for="number">Age (required)</label>
+      <input type="number" id="number" name="age" min="3" max="100" placeholder="e.g., 25">
+    </fieldset>
+
+    <fieldset>
+      <legend>What type of traveler are you?</legend>
+      <label for="dropdown">Select on the list</label>
+      <select id="dropdown" name="traveler-type">
+        <option value="adventurer">Adventurer</option>
+        <option value="food-lover">Food lover</option>
+        <option value="total-relaxation">Total relaxation</option>
+        <option value="culture-and-heritage-seeker">Culture and heritage seeker</option>
+        <option value="off-the-beaten-path">Off the beaten path</option>
+      </select>
+      </fieldset>
+
+      <fieldset>
+      <legend>Dream activities? (check all that apply)</legend>
+      <label><input type="checkbox" name="activities" value="volcano-hike" value="volcano-hike">Volcano hike</label>
+      <label><input type="checkbox" name="activities" value="food">Tasting "cari" and Creol snacks</label>
+      <label><input type="checkbox" name="activities" value="sea">Diving/beach swimming</label>
+      <label><input type="checkbox" name="activities" value="market">Visiting local markets</label>
+      <label><input type="checkbox" name="activities" value="culture">culture">Discovering Creole culture</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferred accommodation?</legend>
+      <label><input type="radio" name="accomodation" value="homestay" /> Homestay</label>
+          <label><input type="radio" name="accomodation" value="seaside" /> Seaside hotel</label>
+          <label><input type="radio" name="accomodation" value="eco-lodge" /> Mountain eco-lodge</label>
+          <label><input type="radio" name="accomodation" value="camping" /> Camping under the stars</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>How did you hear about Reunion Island?</legend>
+      <label for="how">Select on the list</label>
+      <select id="social-media" name="social-media">
+        <option value="social-media">Social media</option>
+        <option value="recommendation">Recommendation</option>
+        <option value="documentaries">Documentaries</option>
+        <option value="other">Other</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Free comments</legend>
+      <label for="comments">Describe your dream trip in a few words</label>
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+    </fieldset>
+    <button type="submit" id="submit">Submit</button>
+    </form>
+  </main>
+  </body>
+</html>
